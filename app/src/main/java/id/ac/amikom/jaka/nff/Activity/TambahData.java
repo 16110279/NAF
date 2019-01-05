@@ -1,10 +1,13 @@
 package id.ac.amikom.jaka.nff.Activity;
 
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,6 +31,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class TambahData extends AppCompatActivity {
+    public static final int NOTIFICATION_ID = 1;
     Bitmap bitmap;
     ImageView imageView;
     EditText nama, harga;
@@ -91,6 +95,21 @@ public class TambahData extends AppCompatActivity {
                                 nama.getText().clear();
                                 harga.getText().clear();
 
+                                NotificationCompat.Builder builder = (NotificationCompat.Builder) new NotificationCompat.Builder(TambahData.this)
+                                        .setSmallIcon(R.mipmap.ic_launcher) //ikon notification
+                                        .setContentTitle("Sukses !") //judul konten
+                                        .setAutoCancel(true)//untuk menswipe atau menghapus notification
+                                        .setContentText("Product berhasil ditambahkan"); //isi text
+
+/*
+Kemudian kita harus menambahkan Notification dengan menggunakan NotificationManager
+ */
+
+                                NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+                                notificationManager.notify(NOTIFICATION_ID, builder.build()
+                                );
+
                             }else
                             {
                                 Toast.makeText(TambahData.this, "Data Error tidak berhasil disimpan", Toast.LENGTH_SHORT).show();
@@ -146,8 +165,8 @@ public class TambahData extends AppCompatActivity {
     public void onBackPressed() {
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle("warnig");
-        alert.setMessage("do you wan to exit");
+        alert.setTitle("warning");
+        alert.setMessage("do you want to exit");
 
         alert.setPositiveButton("yes", new DialogInterface.OnClickListener() {
             @Override

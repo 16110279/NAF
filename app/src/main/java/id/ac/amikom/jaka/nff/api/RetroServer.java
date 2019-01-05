@@ -9,8 +9,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroServer {
 
-    private  static  final String base_url = "http://192.168.1.13/nafero/";
-    public static final String img_url = "http://192.168.1.13/nafero/Uploads/";
+    private  static  final String base_url = "http://192.168.43.22/nafero/";
+    public static final String img_url = "http://192.168.43.22/nafero/Uploads/";
 
     private static Retrofit retrofit;
 

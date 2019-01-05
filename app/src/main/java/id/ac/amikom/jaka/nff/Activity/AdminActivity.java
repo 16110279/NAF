@@ -124,6 +124,7 @@ public class AdminActivity extends AppCompatActivity {
         };
         //Mensetting actionbarToggle untuk drawer layout
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.getDrawerArrowDrawable().setColor(getColor(R.color.colorWhite));
         //memanggil synstate
         actionBarDrawerToggle.syncState();
 

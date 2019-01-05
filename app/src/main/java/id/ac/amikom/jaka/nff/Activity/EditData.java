@@ -1,19 +1,17 @@
-package id.ac.amikom.jaka.nff;
+package id.ac.amikom.jaka.nff.Activity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
-import id.ac.amikom.jaka.nff.adapter.RecylerAdapter;
+
+import id.ac.amikom.jaka.nff.R;
+
 import com.squareup.picasso.Picasso;
 import id.ac.amikom.jaka.nff.api.RestApi;
 import id.ac.amikom.jaka.nff.api.RetroServer;

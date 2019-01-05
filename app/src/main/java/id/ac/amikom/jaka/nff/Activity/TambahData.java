@@ -1,4 +1,4 @@
-package id.ac.amikom.jaka.nff;
+package id.ac.amikom.jaka.nff.Activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -19,6 +19,7 @@ import android.widget.Toast;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
+import id.ac.amikom.jaka.nff.R;
 import id.ac.amikom.jaka.nff.api.RestApi;
 import id.ac.amikom.jaka.nff.api.RetroServer;
 import id.ac.amikom.jaka.nff.model.ResponseModel;

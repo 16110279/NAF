@@ -1,13 +1,11 @@
-package id.ac.amikom.jaka.nff;
+package id.ac.amikom.jaka.nff.Activity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,8 +14,13 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import id.ac.amikom.jaka.nff.R;
+import id.ac.amikom.jaka.nff.SharedPrefManager;
 import id.ac.amikom.jaka.nff.adapter.RecylerAdapter;
 import id.ac.amikom.jaka.nff.api.RestApi;
 import id.ac.amikom.jaka.nff.api.RetroServer;
@@ -32,6 +35,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class AdminActivity extends AppCompatActivity {
+
+    @BindView(R.id.tvResultNama)
+    TextView tvResultNama;
     private Toolbar toolbar;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
@@ -41,11 +47,17 @@ public class AdminActivity extends AppCompatActivity {
     private List<DataModel> mItems = new ArrayList<>();
     ProgressBar pd;
 
+    SharedPrefManager sharedPrefManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
+
+        ButterKnife.bind(this);
+        sharedPrefManager = new SharedPrefManager(this);
+        tvResultNama.setText(sharedPrefManager.getSPNama());
+
 
         // Menginisiasi Toolbar dan mensetting sebagai actionbar
 
@@ -72,11 +84,18 @@ public class AdminActivity extends AppCompatActivity {
                     //dengan intent activity
                     case R.id.navigation1:
                         Toast.makeText(getApplicationContext(),"Product Telah Dipilih",Toast.LENGTH_SHORT).show();
-                        Intent i =new Intent(getApplicationContext(),AdminActivity.class);  startActivity(i);
+                        Intent i =new Intent(getApplicationContext(),LoginActivity.class);  startActivity(i);
                         return true;
                     case R.id.navigation2:
                         Toast.makeText(getApplicationContext(),"Setting Telah Dipilih",Toast.LENGTH_SHORT).show();
-                        Intent ii =new Intent(getApplicationContext(),AdminSetting.class);  startActivity(ii);
+                        Intent ii =new Intent(getApplicationContext(),RegisterActivity.class);  startActivity(ii);
+                        return true;
+                    case R.id.navigation3:
+                        sharedPrefManager.saveSPBoolean(SharedPrefManager.SP_SUDAH_LOGIN, false);
+                        startActivity(new Intent(AdminActivity.this, LoginActivity.class)
+                                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+                        finish();
+
                         return true;
 
                     default:

@@ -12,8 +12,7 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
-import id.ac.amikom.jaka.nff.EditData;
-import id.ac.amikom.jaka.nff.MainActivity;
+import id.ac.amikom.jaka.nff.Activity.EditData;
 import id.ac.amikom.jaka.nff.R;
 import id.ac.amikom.jaka.nff.api.RetroServer;
 import id.ac.amikom.jaka.nff.model.DataModel;

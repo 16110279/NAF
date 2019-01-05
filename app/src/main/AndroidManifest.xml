@@ -11,18 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TampilData" />
-        <activity android:name=".AdminActivity" />
-        <activity android:name=".EditData" />
-        <activity android:name=".TambahData" />
-        <activity android:name=".AdminSetting"></activity>
+        <activity android:name=".Activity.TampilData" />
+        <activity android:name=".Activity.AdminActivity" />
+        <activity android:name=".Activity.EditData" />
+        <activity android:name=".Activity.TambahData" />
+        <activity android:name=".Activity.AdminSetting"/>
+        <activity android:name=".Activity.RegisterActivity"/>
+        <activity android:name=".Activity.LoginActivity" />
     </application>
 
 </manifest>

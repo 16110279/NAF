@@ -27,4 +27,9 @@ public class RetroServer {
 
         return  retrofit;
     }
+    // Mendeklarasikan Interface BaseApiService
+    public static RestApi getAPIService(){
+        return RetrofitClient.getClient(base_url).create(RestApi.class);
+    }
+
 }

@@ -1,13 +1,12 @@
-package id.ac.amikom.jaka.nff;
+package id.ac.amikom.jaka.nff.Activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
-import android.widget.ProgressBar;
 
+import id.ac.amikom.jaka.nff.R;
 import id.ac.amikom.jaka.nff.adapter.RecylerAdapter;
 import id.ac.amikom.jaka.nff.api.RestApi;
 import id.ac.amikom.jaka.nff.api.RetroServer;

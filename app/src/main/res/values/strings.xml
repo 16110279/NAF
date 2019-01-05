@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NFF</string>
+    <string name="nama_siswa">Nama</string>
+    <string name="titikdua">:</string>
+    <string name="domisili">Domisili</string>
+    <string name="navigation_view_item_1">Product</string>
+    <string name="navigation_view_item_2">Setting</string>
+    <string name="navigation_view_item_3">Log Out</string>
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="action_settings">Drawer ditutup</string>
+
+
+</resources>

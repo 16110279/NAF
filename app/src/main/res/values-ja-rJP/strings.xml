@@ -12,4 +12,16 @@
     <string name="titikdua">:</string>
     <string name="domisili">住所</string>
     <string name="nama_siswa">名</string>
+    <string name="namabuah">フルーツ名</string>
+    <string name="admin">管理者</string>
+    <string name="tampildata">データを表示</string>
+    <string name="register">登録</string>
+    <string name="or">または</string>
+    <string name="password">パスワード</string>
+    <string name="email">Eメール</string>
+    <string name="login">ログイン</string>
+    <string name="hapus">削除する</string>
+    <string name="update">更新</string>
+    <string name="harga">価格</string>
+    <string name="namalengkap">フルネーム</string>
 </resources>

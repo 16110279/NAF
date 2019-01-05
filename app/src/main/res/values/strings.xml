@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name" translatable="false">NFF</string>
     <string name="nama_siswa">Nama</string>
+    <string name="namalengkap">Nama Lengkap</string>
     <string name="titikdua">:</string>
+    <string name="harga">Harga</string>
+    <string name="update">Update</string>
+    <string name="hapus">Hapus</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="or">OR</string>
+    <string name="register">REGISTER</string>
+    <string name="tampildata">Tampil Data</string>
+    <string name="admin">Admin</string>
+    <string name="namabuah">Nama Buah</string>
     <string name="domisili">Domisili</string>
     <string name="navigation_view_item_1">Product</string>
     <string name="navigation_view_item_2">Setting</string>

@@ -12,4 +12,16 @@
     <string name="domisili">Domizil</string>
     <string name="titikdua">:</string>
     <string name="nama_siswa">Name</string>
+    <string name="namalengkap">Vollständiger Name</string>
+    <string name="harga">Preis</string>
+    <string name="update">Aktualisieren</string>
+    <string name="hapus">Löschen</string>
+    <string name="login">ANMELDUNG</string>
+    <string name="email">Email</string>
+    <string name="password">Passwort</string>
+    <string name="or">ODER</string>
+    <string name="register">REGISTRIEREN</string>
+    <string name="tampildata">Daten anzeigen</string>
+    <string name="admin">Administrator</string>
+    <string name="namabuah">Fruchtname</string>
 </resources>

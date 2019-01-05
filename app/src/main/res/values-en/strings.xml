@@ -12,4 +12,16 @@
     <string name="action_settings">The drawer is closed</string>
     <string name="titletambah">Success !</string>
     <string name="texttambah">You have added a new product</string>
+    <string name="tampildata">Show Data</string>
+    <string name="namabuah">Fruit Name</string>
+    <string name="namalengkap">Full Name</string>
+    <string name="harga">Price</string>
+    <string name="update">Update</string>
+    <string name="hapus">Delete</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="or">OR</string>
+    <string name="register">REGISTER</string>
+    <string name="admin">Admin</string>
 </resources>

@@ -20,14 +20,14 @@
             android:textSize="24sp"
             android:textColor="#fff"
             android:fontFamily="sans-serif"
-            android:text="REGISTER"/>
+            android:text="@string/register"/>
 
         <EditText
             android:id="@+id/etNama"
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nama"
+            android:hint="@string/nama_siswa"
             android:textColorHint="#80FFFFFF"
             android:padding="8dp"
             android:inputType="textPersonName"
@@ -39,7 +39,7 @@
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:textColorHint="#80FFFFFF"
             android:padding="8dp"
             android:inputType="textEmailAddress"
@@ -51,7 +51,7 @@
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:textColorHint="#80FFFFFF"
             android:inputType="textPassword"
             android:padding="8dp"
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#FFF"
-            android:text="REGISTER"
+            android:text="@string/register"
             android:background="@drawable/bg_rectangle_button"/>
     </LinearLayout>
 </RelativeLayout>

@@ -14,18 +14,18 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Nama" />
+            android:text="@string/nama_siswa" />
 
         <TextView
             android:layout_width="5dp"
             android:layout_height="wrap_content"
-            android:text=":" />
+            android:text="@string/titikdua" />
 
         <EditText
             android:id="@+id/edt_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nama Lengkap" />
+            android:hint="@string/namalengkap" />
     </LinearLayout>
 
     <LinearLayout
@@ -36,18 +36,18 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Harga" />
+            android:text="@string/harga" />
 
         <TextView
             android:layout_width="5dp"
             android:layout_height="wrap_content"
-            android:text=":" />
+            android:text="@string/titikdua" />
 
         <EditText
             android:id="@+id/edt_harga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Harga" />
+            android:hint="@string/harga" />
 
 
 

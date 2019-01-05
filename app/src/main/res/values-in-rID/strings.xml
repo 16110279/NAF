@@ -12,4 +12,16 @@
     <string name="action_settings">Drawer ditutup</string>
     <string name="titletambah">Sukses !</string>
     <string name="texttambah">Anda telah menambahkan produk baru</string>
+    <string name="namabuah">Nama Buah</string>
+    <string name="admin">Admin</string>
+    <string name="tampildata">Tampilkan Data</string>
+    <string name="register">REGISTRASI</string>
+    <string name="or">ATAU</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">LOGIN</string>
+    <string name="hapus">Hapus</string>
+    <string name="update">Update</string>
+    <string name="harga">Harga</string>
+    <string name="namalengkap">Nama Lengkap</string>
 </resources>

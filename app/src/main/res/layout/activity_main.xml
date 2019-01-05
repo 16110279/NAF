@@ -12,14 +12,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/bgbtn2"
-            android:text="Tampil Data" />
+            android:text="@string/tampildata" />
 
         <Button
             android:id="@+id/btnAdmin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Admin" />
+            android:text="@string/admin" />
 
 
 </LinearLayout>

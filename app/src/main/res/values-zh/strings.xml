@@ -12,4 +12,16 @@
     <string name="action_settings">抽屉关闭</string>
     <string name="titletambah">成功！</string>
     <string name="texttambah">您添加了一个新产品</string>
+    <string name="namalengkap">全名</string>
+    <string name="harga">价钱</string>
+    <string name="update">更新</string>
+    <string name="hapus">删除</string>
+    <string name="login">登录</string>
+    <string name="email">电子邮件</string>
+    <string name="password">密码</string>
+    <string name="or">要么</string>
+    <string name="register">寄存器</string>
+    <string name="tampildata">显示数据</string>
+    <string name="admin">管理</string>
+    <string name="namabuah">水果名称</string>
 </resources>

@@ -12,4 +12,16 @@
     <string name="action_settings">Le tiroir est fermé</string>
     <string name="titletambah">Succès !</string>
     <string name="texttambah">Vous avez ajouté un nouveau produit</string>
+    <string name="namabuah">Nom du Fruit</string>
+    <string name="admin">Admin</string>
+    <string name="tampildata">Afficher les données</string>
+    <string name="register">REGISTRE</string>
+    <string name="or">OU</string>
+    <string name="password">Mot de passe</string>
+    <string name="email">Email</string>
+    <string name="login">S\\\'IDENTIFIER</string>
+    <string name="hapus">Effacer</string>
+    <string name="update">Mettre à jour</string>
+    <string name="harga">Prix</string>
+    <string name="namalengkap">Nom complet</string>
 </resources>

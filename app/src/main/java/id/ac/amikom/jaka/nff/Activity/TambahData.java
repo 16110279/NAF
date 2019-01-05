@@ -97,9 +97,9 @@ public class TambahData extends AppCompatActivity {
 
                                 NotificationCompat.Builder builder = (NotificationCompat.Builder) new NotificationCompat.Builder(TambahData.this)
                                         .setSmallIcon(R.drawable.baseline_cloud_upload_black_18dp) //ikon notification
-                                        .setContentTitle("Sukses !") //judul konten
+                                        .setContentTitle(getResources().getString(R.string.titletambah)) //judul konten
                                         .setAutoCancel(true)//untuk menswipe atau menghapus notification
-                                        .setContentText("Anda menambahkan produk baru "+nama.getText().toString()); //isi text
+                                        .setContentText(getResources().getString(R.string.texttambah)+nama.getText().toString());  //isi text
 
 /*
 Kemudian kita harus menambahkan Notification dengan menggunakan NotificationManager

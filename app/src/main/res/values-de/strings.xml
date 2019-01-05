@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFF</string>
+    <string name="texttambah">Sie haben ein neues Produkt hinzugefügt</string>
+    <string name="titletambah">Erfolg!</string>
+    <string name="action_settings">Die Schublade ist geschlossen</string>
+    <string name="closeDrawer">Die Schublade ist geschlossen</string>
+    <string name="openDrawer">Geöffnete Schublade</string>
+    <string name="navigation_view_item_3">Ausloggen</string>
+    <string name="navigation_view_item_2">Rahmen</string>
+    <string name="navigation_view_item_1">Produkt</string>
+    <string name="domisili">Domizil</string>
+    <string name="titikdua">:</string>
+    <string name="nama_siswa">Name</string>
+</resources>

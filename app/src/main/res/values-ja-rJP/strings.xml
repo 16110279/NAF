@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFF</string>
+    <string name="texttambah">新しい商品を追加しました</string>
+    <string name="titletambah">成功</string>
+    <string name="action_settings">引き出しが閉じている</string>
+    <string name="closeDrawer">引き出しが閉じている</string>
+    <string name="openDrawer">開いた引き出し</string>
+    <string name="navigation_view_item_3">ログアウト</string>
+    <string name="navigation_view_item_2">設定</string>
+    <string name="navigation_view_item_1">製品</string>
+    <string name="titikdua">:</string>
+    <string name="domisili">住所</string>
+    <string name="nama_siswa">名</string>
+</resources>

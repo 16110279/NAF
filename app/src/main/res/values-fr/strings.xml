@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFF</string>
+    <string name="nama_siswa">Prénom</string>
+    <string name="titikdua">:</string>
+    <string name="domisili">Domicile</string>
+    <string name="navigation_view_item_1">Produit</string>
+    <string name="navigation_view_item_2">Réglage</string>
+    <string name="navigation_view_item_3">Connectez - Out</string>
+    <string name="openDrawer">Tiroir ouvert</string>
+    <string name="closeDrawer">Le tiroir est fermé</string>
+    <string name="action_settings">Le tiroir est fermé</string>
+    <string name="titletambah">Succès !</string>
+    <string name="texttambah">Vous avez ajouté un nouveau produit</string>
+</resources>

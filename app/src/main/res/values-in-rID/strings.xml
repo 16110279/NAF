@@ -1,18 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">NFF</string>
+    <string name="app_name">NFF</string>
     <string name="nama_siswa">Nama</string>
     <string name="titikdua">:</string>
     <string name="domisili">Domisili</string>
-    <string name="navigation_view_item_1">Product</string>
-    <string name="navigation_view_item_2">Setting</string>
-    <string name="navigation_view_item_3">Log Out</string>
+    <string name="navigation_view_item_1">Produk</string>
+    <string name="navigation_view_item_2">Pengaturan</string>
+    <string name="navigation_view_item_3">Keluar Akun</string>
     <string name="openDrawer">Drawer dibuka</string>
     <string name="closeDrawer">Drawer ditutup</string>
     <string name="action_settings">Drawer ditutup</string>
-    
-    <!--Tambah Data-->
     <string name="titletambah">Sukses !</string>
     <string name="texttambah">Anda telah menambahkan produk baru</string>
-
-
 </resources>

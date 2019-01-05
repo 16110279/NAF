@@ -26,7 +26,6 @@ public class TampilData extends AppCompatActivity {
     private RecyclerView.LayoutManager mManager;
     private List<DataModel> mItems = new ArrayList<>();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +42,7 @@ public class TampilData extends AppCompatActivity {
         getdata.enqueue(new Callback<ResponseModel>() {
             @Override
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
-                Log.d("RETRO", "RESPONSE : " + response.body().getKode());
+                Log.d("RETRO", getResources().getString(R.string.response) + response.body().getKode());
                 mItems = response.body().getResult();
 //                String iTems []= new String[mItems.size()];
 //                for (int i=0; i<mItems.size();i++ ){
@@ -59,7 +58,7 @@ public class TampilData extends AppCompatActivity {
             @Override
             public void onFailure(Call<ResponseModel> call, Throwable t) {
                 //pd.setVisibility(View.GONE);
-                Log.d("RETRO", "FAILED : respon gagal");
+                Log.d("RETRO", getResources().getString(R.string.response)+getResources().getString(R.string.gagalrequest));
 
             }
         });

@@ -77,7 +77,7 @@
             android:id="@+id/selectImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Image" />
+            android:text="@string/selectimage" />
         <Button
             android:id="@+id/btn_insertdata"
             android:layout_width="match_parent"
@@ -85,7 +85,7 @@
             android:layout_marginRight="4dp"
             android:layout_weight="1"
             android:background="@drawable/bgbtn3"
-            android:text="Save" />
+            android:text="@string/save" />
 
 
 

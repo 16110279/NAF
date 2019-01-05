@@ -70,7 +70,7 @@ public class EditData extends AppCompatActivity {
                 update.enqueue(new Callback<ResponseModel>() {
                     @Override
                     public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
-                        Log.d("Retro", "Response");
+                        Log.d("Retro", getResources().getString(R.string.response));
                         Toast.makeText(EditData.this,response.body().getPesan(),Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(EditData.this, AdminActivity.class));
                         finish();
@@ -78,7 +78,7 @@ public class EditData extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<ResponseModel> call, Throwable t) {
-                        Log.d("Retro", "OnFailure");
+                        Log.d("Retro", getResources().getString(R.string.failure));
 
                     }
                 });
@@ -95,7 +95,7 @@ public class EditData extends AppCompatActivity {
                 del.enqueue(new Callback<ResponseModel>() {
                     @Override
                     public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
-                        Log.d("Retro", "onResponse");
+                        Log.d("Retro", getResources().getString(R.string.response));
                         Toast.makeText(EditData.this, response.body().getPesan(),Toast.LENGTH_SHORT).show();
                         Intent gotampil = new Intent(EditData.this,AdminActivity.class);
                         startActivity(gotampil);
@@ -104,7 +104,7 @@ public class EditData extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<ResponseModel> call, Throwable t) {
-                        Log.d("Retro", "onFailure");
+                        Log.d("Retro", getResources().getString(R.string.failure));
                     }
                 });
             }

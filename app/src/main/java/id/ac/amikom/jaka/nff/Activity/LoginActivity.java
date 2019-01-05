@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loading = ProgressDialog.show(mContext, null, "Harap Tunggu...", true, false);
+                loading = ProgressDialog.show(mContext, null, getResources().getString(R.string.haraptunggu), true, false);
                 requestLogin();
             }
         });
@@ -91,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
                                 if (jsonRESULTS.getString("error").equals("false")){
                                     // Jika login berhasil maka data nama yang ada di response API
                                     // akan diparsing ke activity selanjutnya.
-                                    Toast.makeText(mContext, "BERHASIL LOGIN", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(mContext, getResources().getString(R.string.berhasillogin), Toast.LENGTH_SHORT).show();
                                     String nama = jsonRESULTS.getJSONObject("user").getString("nama");
                                     sharedPrefManager.saveSPString(SharedPrefManager.SP_NAMA, nama);
                                     // Shared Pref ini berfungsi untuk menjadi trigger session login
@@ -116,7 +116,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
-                        Log.e("debug", "onFailure: ERROR > " + t.toString());
+                        Log.e("debug", getResources().getString(R.string.failure) + getResources().getString(R.string.error) + t.toString());
                         loading.dismiss();
                     }
                 });

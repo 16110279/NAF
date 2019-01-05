@@ -14,17 +14,50 @@
     <string name="tampildata">Tampil Data</string>
     <string name="admin">Admin</string>
     <string name="namabuah">Nama Buah</string>
+    <string name="selectimage">Select Image</string>
+    <string name="save">Save</string>
     <string name="domisili">Domisili</string>
     <string name="navigation_view_item_1">Product</string>
     <string name="navigation_view_item_2">Setting</string>
     <string name="navigation_view_item_3">Log Out</string>
-    <string name="openDrawer">Drawer dibuka</string>
-    <string name="closeDrawer">Drawer ditutup</string>
-    <string name="action_settings">Drawer ditutup</string>
     
     <!--Tambah Data-->
     <string name="titletambah">Sukses !</string>
     <string name="texttambah">Anda telah menambahkan produk baru</string>
+    <string name="keluartambah">Warning</string>
+    <string name="textkeluartambah">Do you want to Exit?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="namaerror">Nama perlu diisi</string>
+    <string name="hargaerror">Harga perlu diisi</string>
+    <string name="response">response : </string>
+    <string name="berhasilsimpan">Data berhasil disimpan</string>
+    <string name="gagalsimpan">Data Error tidak berhasil disimpan</string>
+    <string name="failure">Failure</string>
+    <string name="gagalrequest">Gagal mengirim request</string>
+
+    <!-- RegisterActivity -->
+    <string name="haraptunggu">Harap tunggu...</string>
+    <string name="responberhasil">Respon Berhasil</string>
+    <string name="berhasilreg">Berhasil Registrasi</string>
+    <string name="respongagal">Respon Gagal</string>
+    <string name="error">Error</string>
+    <string name="koneksimasalah">Koneksi Internet Bermasalah</string>
+
+    <!--LoginActivity-->
+    <string name="berhasillogin">BERHASIL LOGIN</string>
+
+    <!--AdminActivity-->
+    <string name="pilihproduk">Produk Telah Dipili</string>
+    <string name="pilihsetting">Setting Telah Dipilih</string>
+    <string name="andakeluar">Anda Telah Keluar</string>
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="action_settings">Drawer ditutup</string>
+
+    <!--RecyclerAdapter-->
+    <string name="errordata">Error Data </string>
+
 
 
 </resources>

@@ -83,11 +83,11 @@ public class AdminActivity extends AppCompatActivity {
                     // pilihan menu item navigasi akan menampilkan pesan toast klik kalian bisa menggantinya
                     //dengan intent activity
                     case R.id.navigation1:
-                        Toast.makeText(getApplicationContext(),"Product Telah Dipilih",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),getResources().getString(R.string.pilihproduk),Toast.LENGTH_SHORT).show();
                         Intent i =new Intent(getApplicationContext(),LoginActivity.class);  startActivity(i);
                         return true;
                     case R.id.navigation2:
-                        Toast.makeText(getApplicationContext(),"Setting Telah Dipilih",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),getResources().getString(R.string.pilihsetting),Toast.LENGTH_SHORT).show();
                         Intent ii =new Intent(getApplicationContext(),RegisterActivity.class);  startActivity(ii);
                         return true;
                     case R.id.navigation3:
@@ -100,7 +100,7 @@ public class AdminActivity extends AppCompatActivity {
 
                     default:
                         moveTaskToBack(true);
-                        Toast.makeText(getApplicationContext(),"Anda Telah Keluar",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),getResources().getString(R.string.andakeluar),Toast.LENGTH_SHORT).show();
                         return false;
                 }
 
@@ -124,7 +124,6 @@ public class AdminActivity extends AppCompatActivity {
         };
         //Mensetting actionbarToggle untuk drawer layout
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.getDrawerArrowDrawable().setColor(getColor(R.color.colorWhite));
         //memanggil synstate
         actionBarDrawerToggle.syncState();
 
@@ -154,7 +153,7 @@ public class AdminActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
                 pd.setVisibility(View.GONE);
-                Log.d("RETRO", "RESPONSE : " + response.body().getKode());
+                Log.d("RETRO", getResources().getString(R.string.response) + response.body().getKode());
                 mItems = response.body().getResult();
 //                String iTems []= new String[mItems.size()];
 //                for (int i=0; i<mItems.size();i++ ){
@@ -171,7 +170,7 @@ public class AdminActivity extends AppCompatActivity {
             public void onFailure(Call<ResponseModel> call, Throwable t) {
                 pd.setVisibility(View.GONE);
                 //pd.setVisibility(View.GONE);
-                Log.d("RETRO", "FAILED : respon gagal");
+                Log.d("RETRO", getResources().getString(R.string.response) + getResources().getString(R.string.gagalrequest));
 
             }
         });

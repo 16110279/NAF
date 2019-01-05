@@ -54,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loading = ProgressDialog.show(mContext, null, "Harap Tunggu...", true, false);
+                loading = ProgressDialog.show(mContext, null, getResources().getString(R.string.haraptunggu), true, false);
                 requestRegister();
             }
         });
@@ -68,12 +68,12 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                         if (response.isSuccessful()){
-                            Log.i("debug", "onResponse: BERHASIL");
+                            Log.i("debug", getResources().getString(R.string.responberhasil));
                             loading.dismiss();
                             try {
                                 JSONObject jsonRESULTS = new JSONObject(response.body().string());
                                 if (jsonRESULTS.getString("error").equals("false")){
-                                    Toast.makeText(mContext, "BERHASIL REGISTRASI", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(mContext, getResources().getString(R.string.berhasilreg), Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(mContext, LoginActivity.class));
                                 } else {
                                     String error_message = jsonRESULTS.getString("error_msg");
@@ -85,15 +85,15 @@ public class RegisterActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                         } else {
-                            Log.i("debug", "onResponse: GA BERHASIL");
+                            Log.i("debug", getResources().getString(R.string.respongagal));
                             loading.dismiss();
                         }
                     }
 
                     @Override
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
-                        Log.e("debug", "onFailure: ERROR > " + t.getMessage());
-                        Toast.makeText(mContext, "Koneksi Internet Bermasalah", Toast.LENGTH_SHORT).show();
+                        Log.e("debug", getResources().getString(R.string.failure) + getResources().getString(R.string.error) + t.getMessage());
+                        Toast.makeText(mContext, getResources().getString(R.string.koneksimasalah), Toast.LENGTH_SHORT).show();
                     }
                 });
     }

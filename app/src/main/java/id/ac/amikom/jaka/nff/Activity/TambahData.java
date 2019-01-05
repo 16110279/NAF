@@ -69,9 +69,9 @@ public class TambahData extends AppCompatActivity {
                 String sfoto = convertToString();
 
                 if (snama.isEmpty() ) {
-                    nama.setError("nama perlu di isi");
+                    nama.setError(getResources().getString(R.string.namaerror));
                 }else if (sharga.isEmpty()){
-                    harga.setError("harga perlu di isi");}
+                    harga.setError(getResources().getString(R.string.hargaerror));}
                 else {
 
                     RestApi api = RetroServer.getClient().create(RestApi.class);
@@ -84,13 +84,13 @@ public class TambahData extends AppCompatActivity {
                         pd.setVisibility(View.GONE);
 */
 
-                            Log.d("RETRO", "response : " + response.body().toString());
+                            Log.d("RETRO", getResources().getString(R.string.response) + response.body().toString());
                             String kode = response.body().getKode();
 
 
                             if(kode.equals("1"))
                             {
-                                Toast.makeText(TambahData.this, "Data berhasil disimpan", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(TambahData.this, getResources().getString(R.string.berhasilsimpan), Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(TambahData.this, AdminActivity.class));
                                 nama.getText().clear();
                                 harga.getText().clear();
@@ -99,7 +99,7 @@ public class TambahData extends AppCompatActivity {
                                         .setSmallIcon(R.drawable.baseline_cloud_upload_black_18dp) //ikon notification
                                         .setContentTitle(getResources().getString(R.string.titletambah)) //judul konten
                                         .setAutoCancel(true)//untuk menswipe atau menghapus notification
-                                        .setContentText(getResources().getString(R.string.texttambah)+nama.getText().toString());  //isi text
+                                        .setContentText(getResources().getString(R.string.texttambah)+nama.getText().toString()); //isi text
 
 /*
 Kemudian kita harus menambahkan Notification dengan menggunakan NotificationManager
@@ -112,7 +112,7 @@ Kemudian kita harus menambahkan Notification dengan menggunakan NotificationMana
 
                             }else
                             {
-                                Toast.makeText(TambahData.this, "Data Error tidak berhasil disimpan", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(TambahData.this, getResources().getString(R.string.gagalsimpan), Toast.LENGTH_SHORT).show();
 
                             }
                         }
@@ -122,7 +122,7 @@ Kemudian kita harus menambahkan Notification dengan menggunakan NotificationMana
 /*
                         pd.setVisibility(View.GONE);
 */
-                            Log.d("RETRO", "Falure : " + "Gagal Mengirim Request");
+                            Log.d("RETRO", getResources().getString(R.string.failure) + getResources().getString(R.string.gagalrequest));
                         }
                     });
                 }}
@@ -165,17 +165,17 @@ Kemudian kita harus menambahkan Notification dengan menggunakan NotificationMana
     public void onBackPressed() {
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle("warning");
-        alert.setMessage("do you want to exit");
+        alert.setTitle(getResources().getString(R.string.keluartambah));
+        alert.setMessage(getResources().getString(R.string.textkeluartambah));
 
-        alert.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+        alert.setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 TambahData.this.finish();
 
             }
         });
-        alert.setNegativeButton("no", new DialogInterface.OnClickListener() {
+        alert.setNegativeButton(getResources().getString(R.string.no), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
